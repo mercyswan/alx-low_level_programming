@@ -14,7 +14,12 @@ return (0);
 */
 int main(void)
 {
+<<<<<<< HEAD
     puts("\"Programming is like building a multilingual puzzle");
             return(0);
 >>>>>>> 6ccac4bbb5a1ac0a77152485a5fd3b6009654066
+=======
+puts("\"Programming is like building a multilingual puzzle");
+return (0);
+>>>>>>> 84e738d4b649db19aa0b231aee7746f63b87a594
 }
