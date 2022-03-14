@@ -13,8 +13,6 @@ int main(void)
 
 	char ch;
 
-
-
 	for (n = 48; n < 58; n++)
 
 	{
@@ -27,13 +25,13 @@ int main(void)
 
 	{
 
-		putchar(n);
+		putchar(ch);
 
 	}
 
-	putchar('\n');
+		putchar('\n');
 
-	return (0);
+return (0);
 
 }
 
