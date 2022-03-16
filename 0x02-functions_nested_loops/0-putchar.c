@@ -1,16 +1,9 @@
-#include "main.h"
-
-
-
+#include
 /**
- *
- *  * main - prints _putchar
- *
- *   *
- *
- *    * Return: 0 (Success)
- *
- *     */
+* main - prints _putchar
+* Return: 0 (Success)
+*
+*/
 
 
 
