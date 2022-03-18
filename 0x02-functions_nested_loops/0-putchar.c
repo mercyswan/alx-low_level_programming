@@ -8,6 +8,7 @@ int main(void)
 
 {
 	_putchar("_putchar");
+
 	_putchar('_');
 
 	_putchar('p');
