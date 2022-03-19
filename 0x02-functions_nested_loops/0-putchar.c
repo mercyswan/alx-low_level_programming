@@ -7,8 +7,8 @@
 int main(void)
 {
 	char *v = "_putchar";
+	
 	while (*v)
-	for (c = 0; c < 8; c++)
 	{
 		_putchar(*v);
 		v++;
