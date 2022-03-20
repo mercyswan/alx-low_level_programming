@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
 * print_alphabet - print alphabet lowercase
 * Return: Always 0.
@@ -6,7 +6,6 @@ include "main.h"
 void print_alphabet(void)
 
 {
-
 char alphabet;
 
 
