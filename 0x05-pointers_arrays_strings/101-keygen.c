@@ -26,14 +26,14 @@ int main(void)
 														printf("%c", pass);
 															}
 						printf("%c", 2772 - sum);
-				
-
-							return (0);
+											return (0);
 	
+
 int num;
 srand(time(0));
 num = rand();
 printf("%i\n", num);
+	
 return (0);
 
 }
