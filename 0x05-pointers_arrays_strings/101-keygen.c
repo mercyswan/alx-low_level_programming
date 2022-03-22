@@ -10,10 +10,9 @@
  * main - generates random valid passwords
  * Return: 0 (on success).
  */
-
 int main(void)
-
 {
+
 
 		int pass, sum;
 			srand(time(NULL));
@@ -31,4 +30,12 @@ int main(void)
 
 							return (0);
 
+=======
+int num;
+
+srand(time(0));
+num = rand();
+printf("%i\n", num);
+return (0);
+>>>>>>> 5635d5cf61a9607d9511f31fd96ce4480aca17c1
 }
