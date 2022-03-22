@@ -29,10 +29,11 @@ int main(void)
 											return (0);
 	
 
-int num;
-srand(time(0));
-num = rand();
-printf("%i\n", num);
+					int num;
+						srand(time(0));
+						num = rand();
+
+							printf("%i\n", num);
 	
 return (0);
 
