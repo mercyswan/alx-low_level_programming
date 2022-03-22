@@ -7,11 +7,8 @@
  */
 
 int is_numerical(unsigned int n)
-
 {
-
 return (n >= '0' &&  n <= '9');
-
 }
 
 /**
@@ -31,7 +28,7 @@ int sign;
 
 sign = 1;
 
-number = 0
+number = 0;
 
 
 
