@@ -26,16 +26,7 @@ int main(void)
 														printf("%c", pass);
 															}
 						printf("%c", 2772 - sum);
-				
-
-							return (0);
-
-=======
-int num;
-
-srand(time(0));
-num = rand();
-printf("%i\n", num);
-return (0);
->>>>>>> 5635d5cf61a9607d9511f31fd96ce4480aca17c1
+											return (0);
+	
+					
 }
