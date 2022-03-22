@@ -1,7 +1,5 @@
 #include "main.h"
 
-
-
 /**
  * print_number - print out a number using printchar.
  * @n: the number you want to print using putchar
@@ -56,7 +54,6 @@ void print_number(int n)
 		while (temp2 > 1)
 
 		{
-
 			div *= 10;
 
 			--temp2;
@@ -80,7 +77,5 @@ void print_number(int n)
 			div /= 10;
 
 		}
-
 	}
-
 }
