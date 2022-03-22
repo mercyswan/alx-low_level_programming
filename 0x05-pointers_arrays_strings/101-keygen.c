@@ -29,7 +29,8 @@ int main(void)
 				
 
 							return (0);
-int num;
+	
+	int num;
 
 srand(time(0));
 num = rand();
