@@ -27,7 +27,7 @@ if (s[count + 1] >= 97 && s[count + 1] <= 122)
 {
 s[count + 1] = s[count + 1] - 32;
 }
-}
+	}
 count++;
 }
 	
