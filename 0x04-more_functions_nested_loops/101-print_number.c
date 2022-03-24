@@ -35,7 +35,6 @@ div *= 10;
 for (i = 0; i < cnt; ++i)
 {
 result = n / div;
-
 if (result < 0)
 result *= -1;
 _putchar(result + '0');
@@ -43,4 +42,5 @@ n %= div;
 div /= 10;
 }
 }
+
 }
