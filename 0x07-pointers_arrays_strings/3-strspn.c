@@ -1,6 +1,6 @@
-include "holberton.h"
-
 #include <stdio.h>
+#include "main.h"
+
 
 /**
  *_strspn - gets the lenght of a prefix substring.
@@ -13,8 +13,9 @@ include "holberton.h"
  */
 
 unsigned int _strspn(char *s, char *accept)
-
+	
 {
+
 
 	unsigned int count, count1, match = 0;
 
@@ -38,8 +39,7 @@ unsigned int _strspn(char *s, char *accept)
 																					{
 
 																																			/* increment if mathc is found */
-																																							match = match + 1;
-
+																																					match = match + 1;
 																																					}
 																					count1++;
 																					}
@@ -51,4 +51,5 @@ unsigned int _strspn(char *s, char *accept)
 
 					return (match);
 
-}
+
+
