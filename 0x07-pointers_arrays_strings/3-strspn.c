@@ -1,42 +1,54 @@
-#include "main.h"
+include "holberton.h"
 
-
+#include <stdio.h>
 
 /**
- * _strspn - gets lengthof a prefix substring
- * @s: string to check
- *@accept: string to check agains
- * Return: number of bytes of s in accept
+ *_strspn - gets the lenght of a prefix substring.
+ *@s: pointer to strin.
+ *@accept: pointer to bytes that are checked
+ *for in s.
+ *Return: return number of bytes in the initial
+ *segment of s which consist only of bytes from
+ *accept.
  */
 
 unsigned int _strspn(char *s, char *accept)
 
 {
 
-		unsigned int i, j;
+	unsigned int count, count1, match = 0;
 
 
+			count = 0;
 
-			for (i = 0; s[i]; i++)
+				while (s[count] != '\0')
 
-					{
+						{
 
-								for (j = 0; accept[j]; j++)
+					if (s[count] != 32)/* check for spaces */
 
-											{
+							{
+						count1 = 0;
 
-															if (s[i] == accept[j])
+																			while (accept[count1] != '\0')
 
-																				break;
+																				{
+																				if (accept[count1] == s[count])
 
-																	}
+																					{
 
-										if (!accept[j])
+																																			/* increment if mathc is found */
+																																							match = match + 1;
 
-														break;
+																																					}
+																					count1++;
+																					}
+																					}
+					else
+					return (match);
+					count++;
+					}
 
-											}
-
-				return (i);
+					return (match);
 
 }
