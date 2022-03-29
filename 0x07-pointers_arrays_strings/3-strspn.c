@@ -1,55 +1,47 @@
-#include <stdio.h>
 #include "main.h"
 
-
 /**
- *_strspn - gets the lenght of a prefix substring.
- *@s: pointer to strin.
- *@accept: pointer to bytes that are checked
- *for in s.
- *Return: return number of bytes in the initial
- *segment of s which consist only of bytes from
- *accept.
+ * _strspn - gets the length of a prefix substring.
+ * @s: initial segment.
+ * @accept: accepted bytes.
+ * Return: the number of accepted bytes.
  */
 
 unsigned int _strspn(char *s, char *accept)
-	
+
 {
 
-
-	unsigned int count, count1, match = 0;
-
-
-			count = 0;
-
-				while (s[count] != '\0')
-
-						{
-
-					if (s[count] != 32)/* check for spaces */
-
-							{
-						count1 = 0;
-
-																			while (accept[count1] != '\0')
-
-																				{
-																				if (accept[count1] == s[count])
-
-																					{
-
-																																			/* increment if mathc is found */
-																																					match = match + 1;
-																																					}
-																					count1++;
-																					}
-																					}
-					else
-					return (match);
-					count++;
-					}
-
-					return (match);
+	unsigned int i, j, bool;
 
 
+
+	for (i = 0; *(s + i) != '\0'; i++)
+
+	{
+
+		bool = 1;
+
+		for (j = 0; *(accept + j) != '\0'; j++)
+
+		{
+
+			if (*(s + i) == *(accept + j))
+
+			{
+
+				bool = 0;
+
+				break;
+
+			}
+
+		}
+
+		if (bool == 1)
+
+			break;
+
+	}
+
+	return (i);
 }
