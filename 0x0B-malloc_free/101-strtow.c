@@ -100,4 +100,4 @@ int countWords(char *s)
 		s++;
 	}
 	return (words);
-
+}
