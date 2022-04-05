@@ -1,103 +1,54 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
- * strtow - splits a string into words
- * @str: string of words to be split
- * Return: double pointer to strings
+ * _realloc - reallocates old to new, set conditions from problem
+ * returning dest w/ size of malloc new_size, set src as ptr
+ * @ptr: pointer to memory prev alloc, must free end
+ * @old_size: input old
+ * @new_size: input new
+ * Return: 0
  */
-char **strtow(char *str)
-{
-	char **ptr;
-	int i, k, len, start, end, j = 0;
-	int words =  countWords(str);
 
-	if (!str || !countWords(str))
-		return (NULL);
-	ptr = malloc(sizeof(char *) * (words + 1));
-	if (!ptr)
-		return (NULL);
-	for (i = 0; i < words; i++)
-	{
-		start = startIndex(str, j);
-		end = endIndex(str, start);
-		len = end - start;
-		ptr[i] = malloc(sizeof(char) * (len + 1));
-		if (!ptr[i])
-		{
-			i -= 1;
-			while (i >= 0)
-			{
-				free(ptr[i]);
-					i--;
-			}
-			free(ptr);
-			return (NULL);
-		}
-		for (k = 0; k < len; k++)
-			ptr[i][k] = str[start++];
-		ptr[i][k++] = '\0';
-		j = end + 1;
-	}
-	ptr[i] = NULL;
-	return (ptr);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+{
+		char *dest, *src;
+			unsigned int i;
+
+				if (new_size == old_size)
+							return (ptr);
+
+					if (ptr == NULL)
+
+}
+						ptr = malloc(new_size);
+						if (ptr == NULL)
+{
+						return (NULL);
+}
+{
+return (ptr);
 }
 
-/**
- * isSpace - determines if character is a space or not
- * @c: input char
- * Return: 1 if true or 0 or not
- */
-int isSpace(char c)
+						if (new_size == 0 && ptr != NULL)
 {
-	return (c == ' ');
+							free(ptr);
+							return (NULL);
 }
 
-/**
- * startIndex - returns first index of non-space char
- * @s: input string
- * @index: starting index
- * Return: index of first non-space char
- */
-int startIndex(char *s, int index)
-{
-	while (isSpace(*(s + index)))
-		index++;
-	return (index);
-}
+							dest = malloc(new_size);
+								if (dest == NULL)
+								return (NULL);
 
-/**
- * endIndex - returns last index of non-space char
- * @s: input string
- * @index: starting index
- * Return: index of last index of non-space char
- */
-int endIndex(char *s, int index)
-{
-	while (!isSpace(*(s + index)))
-		index++;
-	return (index);
-}
+									src = ptr;
 
-/**
- * countWords - counts numbers of words in string
- * @s: input string
- * Return: number of words
- */
-int countWords(char *s)
-{
-	int wordOn = 0;
-	int words = 0;
+										for (i = 0; i < new_size && i < old_size; i++)
 
-	while (*s)
-	{
-		if (isSpace(*s) && wordOn)
-			wordOn = 0;
-		else if (!isSpace(*s) && !wordOn)
-		{
-			wordOn = 1;
-			words++;
-		}
-		s++;
-	}
-	return (words);
+										dest[i] = src[i];
+											free(ptr);
+
+
+											return (dest);
+
 }
