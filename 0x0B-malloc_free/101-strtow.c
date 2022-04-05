@@ -10,6 +10,7 @@
  */
 void ch_free_grid(char **grid, unsigned int height)
 {
+
 		if (grid != NULL && height != 0)
 {
 			for (; height > 0; height--)
@@ -63,4 +64,33 @@ char **strtow(char *str)
 												aout[i] = NULL;
 return (aout);
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
