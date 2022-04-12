@@ -1,1 +1,1 @@
-ALX Low Level Language
+Structures typedef
