@@ -14,9 +14,7 @@ int main(void)
 			for (l = 50; l < 58; l++)
 			{
 				if (l > m && m > n)
-				{
-<<<<<<< HEAD
-
+		
 					putchar(n);
 
 					putchar(m);
@@ -27,14 +25,12 @@ int main(void)
 					{
 					putchar(',');
 
-=======
 					putchar(n);
 					putchar(m);
 					putchar(l);
 					if (n != 55 || m != 56)
 					{
 					putchar(',');
->>>>>>> 78d14ffc125a7ccba7e40d313197e71ee7c330f1
 					putchar(' ');
 					}
 				}
